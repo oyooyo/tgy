@@ -185,7 +185,9 @@
 .if !defined(MOTOR_REVERSE)
 .equ	MOTOR_REVERSE	= 0	; Reverse normal commutation direction
 .endif
+.if !defined(RC_PULS_REVERSE)
 .equ	RC_PULS_REVERSE	= 0	; Enable RC-car style forward/reverse throttle
+.endif
 .equ	RC_CALIBRATION	= 1	; Support run-time calibration of min/max pulse lengths
 .equ	SLOW_THROTTLE	= 0	; Limit maximum throttle jump to try to prevent overcurrent
 .equ	BEACON		= 1	; Beep periodically when RC signal is lost
@@ -200,8 +202,12 @@
 .equ	DEBUG_ADC_DUMP	= 0	; Output an endless loop of all ADC values (no normal operation)
 .equ	MOTOR_DEBUG	= 0	; Output sync pulses on MOSI or SCK, debug flag on MISO
 
+.if !defined(I2C_ADDR)
 .equ	I2C_ADDR	= 0x50	; MK-style I2C address
+.endif
+.if !defined(MOTOR_ID)
 .equ	MOTOR_ID	= 1	; MK-style I2C motor ID, or UART motor number
+.endif
 
 .equ	RCP_TOT		= 2	; Number of 65536us periods before considering rc pulse lost
 
