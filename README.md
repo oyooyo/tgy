@@ -10,6 +10,11 @@ providing a few alternative configurations for existing targets:
 [This .zip file](https://github.com/oyooyo/tgy/raw/master/tgy_2016-06-19_ceacb0f.zip)
 contains compiled firmware binaries for all targets.
 
+The Makefile also supports the [ArduinoUSBLinker](https://github.com/c---/ArduinoUSBLinker)
+for flashing firmware to ESCs already running SimonK with the
+1-wire-bootloader enabled. For example, `make program_aul_bs_nfet`
+will flash the *bs_nfet* firmware using an ArduinoUSBLinker.
+
 Features
 --------
 - 16MHz operation on most boards
