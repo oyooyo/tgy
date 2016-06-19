@@ -1,15 +1,14 @@
-https://github.com/sim-/tgy
+# "SimonK" firmware with alternative configurations
+This is my personal fork of the popular ["SimonK" firmware](https://github.com/sim-/tgy),
+providing a few alternative configurations for existing targets:
+- **bs_nfet_reverse** (*bs_nfet* with forward and reverse throttle)
+- **bs_nfet_uart1** (*bs_nfet* with UART instead of PWM input, using motor ID 1)
+- **bs_nfet_uart2** (*bs_nfet* with UART instead of PWM input, using motor ID 2)
+- **bs_nfet_uart3** (*bs_nfet* with UART instead of PWM input, using motor ID 3)
+- **bs_nfet_uart4** (*bs_nfet* with UART instead of PWM input, using motor ID 4)
 
-**Binary Downloads**: http://0x.ca/tgy/downloads/
-
-This tree contains Atmel AVR assembly code for ATmega-based 3-phase
-sensor-less motor electronic speed control (ESC) boards, originally for
-Turnigy and similar models. This work is based on Bernhard Konze's
-"tp-18a" software, which was a port from his earlier personal work to the
-TowerPro 18A and original (not current!) Turnigy Plush boards. Please see
-tgy.asm for Bernhard's license.
-
-Patches and comments are always welcome! Let me know how it goes!
+[This .zip file](https://github.com/oyooyo/tgy/raw/master/tgy_2016-06-19_ceacb0f.zip)
+contains compiled firmware binaries for all targets.
 
 Features
 --------
