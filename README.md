@@ -7,7 +7,7 @@ providing a few alternative configurations for existing targets:
 - **bs_nfet_uart3** (*bs_nfet* with UART instead of PWM input, using motor ID 3)
 - **bs_nfet_uart4** (*bs_nfet* with UART instead of PWM input, using motor ID 4)
 
-[This .zip file](https://github.com/oyooyo/tgy/raw/master/tgy_2016-06-19_ceacb0f.zip)
+[This .zip file](https://github.com/oyooyo/tgy/raw/master/tgy_2017-02-01_f0abf02.zip)
 contains compiled firmware binaries for all targets.
 
 The Makefile also supports the [ArduinoUSBLinker](https://github.com/c---/ArduinoUSBLinker)
